@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // hide debug show in corner 
+      // hide debug show in corner
       debugShowCheckedModeBanner: false,
       // home: const Home(),
       // => Use light and dark them
@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
       darkTheme: MyTheme.darkTheme(context),
       initialRoute: MyRoutes.homeRoute,
       routes: {
-        "/":(context)=> const LoginPage(),
-        MyRoutes.homeRoute:(context) =>  const Home(),
-        MyRoutes.loginRoute:(context)=> const LoginPage()
+        "/": (context) => const LoginPage(),
+        MyRoutes.homeRoute: (context) => const Home(),
+        MyRoutes.loginRoute: (context) => const LoginPage()
       },
     );
   }
